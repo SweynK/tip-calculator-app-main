@@ -19,9 +19,10 @@
       type="image/x-icon"
     />
     <link href="./output.css" rel="stylesheet" />
+    <script src="./app.js" defer></script>
     <title>Document</title>
   </head>
-  <body class="font-poppins bg-[#C5E4E7]">
+  <body class="bg-[#C5E4E7] font-poppins">
     <header class="flex justify-center">
       <img
         src="../images/logo.svg"
@@ -29,8 +30,10 @@
         class="mt-[50px] h-[53px] w-[86px]"
       />
     </header>
-    <main>
-      <div class="mt-[44px] rounded-t-[25px] bg-white">
+    <main class="flex justify-center">
+      <div
+        class="mt-[44px] w-full rounded-t-[25px] bg-white lg:flex lg:w-[920px] lg:justify-center lg:gap-10"
+      >
         <section class="flex flex-col items-center gap-[26px]">
           <div class="relative">
             <img
@@ -39,7 +42,7 @@
               class="absolute left-[20px] top-[72px]"
             />
             <div
-              class="mt-[26px] flex h-[78px] w-[312px] flex-col justify-between"
+              class="mt-[26px] flex h-[78px] w-[312px] flex-col justify-between lg:w-[380px]"
             >
               <label for="bill" class="font-bold leading-6 text-[#5E7A7D]"
                 >Bill</label
@@ -55,37 +58,37 @@
           <div>
             <p class="mb-3 font-bold leading-6 text-[#5E7A7D]">Select Tip %</p>
             <div
-              class="grid h-[216px] w-[312px] grid-cols-2 grid-rows-3 content-between"
+              class="grid h-[216px] w-[312px] grid-cols-2 grid-rows-3 content-between lg:h-[150px] lg:w-[380px] lg:grid-cols-3 lg:grid-rows-2"
             >
               <button
-                class="h-[48px] w-[146px] rounded-md bg-[#00474B] text-[24px] font-bold text-[#FFFFFF]"
+                class="tip h-[48px] w-[146px] rounded-md bg-[#00474B] text-[24px] font-bold text-[#FFFFFF] hover:bg-[#9FE8DF] hover:text-[#00474B] lg:w-[116px]"
               >
                 5%
               </button>
               <button
-                class="h-[48px] w-[146px] rounded-md bg-[#00474B] text-[24px] font-bold text-[#FFFFFF]"
+                class="tip h-[48px] w-[146px] rounded-md bg-[#00474B] text-[24px] font-bold text-[#FFFFFF] hover:bg-[#9FE8DF] hover:text-[#00474B] lg:w-[116px]"
               >
                 10%
               </button>
               <button
-                class="h-[48px] w-[146px] rounded-md bg-[#00474B] text-[24px] font-bold text-[#FFFFFF]"
+                class="tip h-[48px] w-[146px] rounded-md bg-[#00474B] text-[24px] font-bold text-[#FFFFFF] hover:bg-[#9FE8DF] hover:text-[#00474B] lg:w-[116px]"
               >
                 15%
               </button>
               <button
-                class="h-[48px] w-[146px] rounded-md bg-[#00474B] text-[24px] font-bold text-[#FFFFFF]"
+                class="tip h-[48px] w-[146px] rounded-md bg-[#00474B] text-[24px] font-bold text-[#FFFFFF] hover:bg-[#9FE8DF] hover:text-[#00474B] lg:w-[116px]"
               >
                 25%
               </button>
               <button
-                class="h-[48px] w-[146px] rounded-md bg-[#00474B] text-[24px] font-bold text-[#FFFFFF]"
+                class="tip h-[48px] w-[146px] rounded-md bg-[#00474B] text-[24px] font-bold text-[#FFFFFF] hover:bg-[#9FE8DF] hover:text-[#00474B] lg:w-[116px]"
               >
                 50%
               </button>
               <input
                 type="number"
                 id="custom"
-                class="h-[48px] w-[146px] rounded-md bg-[#F3F9FA] text-center text-[24px] font-bold text-[#547878] outline-none"
+                class="h-[48px] w-[146px] rounded-md bg-[#F3F9FA] text-center text-[24px] font-bold text-[#547878] outline-none hover:bg-[#9FE8DF] hover:text-[#00474B] lg:w-[116px]"
                 placeholder="Custom"
               />
             </div>
@@ -96,7 +99,9 @@
               alt="person icon"
               class="absolute left-[20px] top-[47px]"
             />
-            <div class="flex h-[78px] w-[312px] flex-col justify-between">
+            <div
+              class="flex h-[78px] w-[312px] flex-col justify-between lg:w-[380px]"
+            >
               <label for="people" class="font-bold leading-6 text-[#5E7A7D]"
                 >Number of People</label
               >
@@ -109,11 +114,13 @@
             </div>
           </div>
         </section>
-        <section class="mt-[44px] flex flex-col items-center pb-8">
+        <section class="mt-[44px] flex grid-rows-4 flex-col items-center pb-8">
           <div
-            class="flex h-[257px] w-[327px] flex-col justify-evenly rounded-lg bg-[#00474B]"
+            class="flex h-[257px] w-[327px] flex-col justify-evenly rounded-lg bg-[#00474B] lg:grid lg:h-[417px] lg:w-[413px] lg:grid-cols-1 lg:grid-rows-4"
           >
-            <div class="flex items-center justify-between px-[23px]">
+            <div
+              class="flex items-center justify-between px-[23px] lg:px-[40px]"
+            >
               <p
                 class="flex flex-col text-[16px] font-bold leading-6 text-[#FFFFFF]"
               >
@@ -122,11 +129,16 @@
                   / person</span
                 >
               </p>
-              <p class="text-[32px] font-bold leading-[47px] text-[#26C2AE]">
+              <p
+                id="result-tip"
+                class="text-[32px] font-bold leading-[47px] text-[#26C2AE]"
+              >
                 $0.00
               </p>
             </div>
-            <div class="flex items-center justify-between px-[23px]">
+            <div
+              class="flex items-center justify-between px-[23px] lg:px-[40px]"
+            >
               <p
                 class="flex flex-col text-[16px] font-bold leading-6 text-[#FFFFFF]"
               >
@@ -135,12 +147,16 @@
                   / person</span
                 >
               </p>
-              <p class="text-[32px] font-bold leading-[47px] text-[#26C2AE]">
+              <p
+                id="result-total"
+                class="text-[32px] font-bold leading-[47px] text-[#26C2AE]"
+              >
                 $0.00
               </p>
             </div>
             <button
-              class="mx-auto h-[48px] w-[280px] rounded-md bg-[#26C2AE] text-[20px] font-bold leading-7 text-[#00474B]"
+              id="btn-reset"
+              class="mx-auto h-[48px] w-[280px] rounded-md bg-[#26C2AE] text-[20px] font-bold leading-7 text-[#00474B] hover:bg-[#9FE8DF] lg:row-start-4 lg:row-end-5 lg:mt-[16px] lg:w-[332px]"
             >
               RESET
             </button>
