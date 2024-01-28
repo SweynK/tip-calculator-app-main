@@ -81,8 +81,6 @@ btnReset.addEventListener("click", () => {
   peopleInput.value = "";
   billInput.classList.remove("border-red-400");
   billInput.classList.remove("border-green-400");
-  billInput.classList.remove("border-2");
   peopleInput.classList.remove("border-red-400");
   peopleInput.classList.remove("border-green-400");
-  peopleInput.classList.remove("border-2");
 });
