@@ -28,9 +28,15 @@ tipInput.forEach((el) => {
     tipValue = parseInt(e.target.innerText);
     calculation();
     tipInput.forEach((el) => {
-      el.classList.remove("bg-[#26C2AE]");
+      el.classList.add("bg-[#00474B]");
+      el.classList.remove("bg-[#9FE8DF]");
+      el.classList.add("text-[#FFFFFF]");
+      el.classList.remove("text-[#00474B]");
     });
-    el.classList.add("bg-[#26C2AE]");
+    el.classList.remove("bg-[#00474B]");
+    el.classList.add("bg-[#9FE8DF]");
+    el.classList.remove("text-[#FFFFFF]");
+    el.classList.add("text-[#00474B]");
   });
 });
 
@@ -66,7 +72,9 @@ customInput.addEventListener("input", (e) => {
 });
 customInput.addEventListener("click", () => {
   tipInput.forEach((el) => {
-    el.classList.remove("bg-[#26C2AE]");
+    el.classList.add("bg-[#00474B]");
+    el.classList.remove("bg-[#9FE8DF]");
+    el.classList.add("text-[#FFFFFF]");
   });
 });
 
