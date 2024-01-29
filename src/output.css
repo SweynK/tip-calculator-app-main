@@ -709,6 +709,11 @@ input[type="number"]::-webkit-inner-spin-button,
   border-color: rgb(248 113 113 / var(--tw-border-opacity));
 }
 
+.bg-\[\#00474B\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 71 75 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#26C2AE\] {
   --tw-bg-opacity: 1;
   background-color: rgb(38 194 174 / var(--tw-bg-opacity));
@@ -717,11 +722,6 @@ input[type="number"]::-webkit-inner-spin-button,
 .bg-\[\#9FE8DF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(159 232 223 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#00474B\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 71 75 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#C5E4E7\] {

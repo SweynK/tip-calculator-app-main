@@ -91,4 +91,9 @@ btnReset.addEventListener("click", () => {
   billInput.classList.remove("border-green-400");
   peopleInput.classList.remove("border-red-400");
   peopleInput.classList.remove("border-green-400");
+  tipInput.forEach((el) => {
+    el.classList.add("bg-[#00474B]");
+    el.classList.remove("bg-[#9FE8DF]");
+    el.classList.add("text-[#FFFFFF]");
+  });
 });
